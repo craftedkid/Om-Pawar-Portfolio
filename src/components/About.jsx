@@ -24,6 +24,12 @@ const About = () => {
             transition={{duration :1}}
             viewport={{ once: true }}
             className="mr-24 pl-4 text-lg leading-loose"> {ABOUT.text2}</motion.p>
+            <motion.p 
+            initial={ { opacity : 0, x: 100}}
+            whileInView={{ opacity: 1, x:0}} 
+            transition={{duration :1}}
+            viewport={{ once: true }}
+            className="mr-24 pl-4 text-lg leading-loose"> {ABOUT.text3}</motion.p>
         </div>
     )
 }
